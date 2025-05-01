@@ -22,7 +22,3 @@ export const existenteEmail = async (email = ' ') => {
         throw new Error(`El correo ${ email } ya existe en la base de datos`);
     }
 }
-
-
-
-
