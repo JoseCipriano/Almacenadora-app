@@ -8,10 +8,9 @@ const ProductSchema = Schema({
         maxLenght: [100, "El maximo permitido son 100 caracteres"]
     },
     category: {
-        type: String,
-        unique: [true, "La categoria ya existe"],
-        required: [true, "La categoria del producto es requerido"],
-        maxLenght: [200, "El maximo permitido son 200 caracteres"]
+        type: Schema.Types.ObjectId,
+        ref: 'Category',
+        required: true
     },
     supplier: {
         type: String,

@@ -1,5 +1,5 @@
 import jwt from 'jsonwebtoken';
-//import Usuario from '../users/user.model.js';
+import Usuario from '../users/user.model.js';
 
 export const validarJWT = async (req, res, next) => {
 
@@ -47,7 +47,7 @@ export const esAdminRole = (req, res, next) => {
         });
     }
 
-    if (req.usuario.role !== "ADMIN_ROLE") {
+    if (req.usuario.role !== "ADMIN") {
         return res.status(403).json({
             msg: "No tienes el rol de Administrador para realizar esta acción"
         });

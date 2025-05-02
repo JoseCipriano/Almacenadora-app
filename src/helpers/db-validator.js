@@ -1,5 +1,6 @@
 import Product from '../products/product.model.js';
 import User from '../users/user.model.js';
+import Category from '../categories/category.model.js';
 
 export const existeProductoById = async (id = '') => {
 
@@ -20,5 +21,14 @@ export const existenteEmail = async (email = ' ') => {
 
     if(existeEmail){
         throw new Error(`El correo ${ email } ya existe en la base de datos`);
+    }
+}
+
+export const existeCategoriaById = async (id = '') => {
+
+    const existeCategoria = await Category.findById(id);
+
+    if(!existeCategoria){
+        throw new Error(`El ID ${id} no existe`);
     }
 }

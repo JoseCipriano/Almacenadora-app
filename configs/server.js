@@ -8,6 +8,7 @@ import { dbConnection } from "./mongo.js";
 import limiter from '../src/middlewares/validar-cant-peticiones.js';
 import productRoutes from '../src/products/product.routes.js';
 import authRoutes from '../src/auth/auth.routes.js';
+import categoryRoutes from '../src/categories/category.routes.js';
 
 const middlewares = (app) =>{
     app.use(express.urlencoded({extended: false}))
@@ -21,6 +22,7 @@ const middlewares = (app) =>{
 const routes = (app) => {
     app.use("/Almacenadora_app/v1/products", productRoutes);
     app.use("/Almacenadora_app/v1/auth", authRoutes);
+    app.use("/Almacenadora_app/v1/categories", categoryRoutes);
 }
 
 const conectDB = async() =>{
