@@ -1,0 +1,213 @@
+{
+	"info": {
+		"_postman_id": "4385764d-5b25-43bc-ac4b-a6b3db437866",
+		"name": "Products",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42631856"
+	},
+	"item": [
+		{
+			"name": "Agregar Producto",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODEzZDAzYzY2YmFjMmE5YTAxYmU4ZjgiLCJpYXQiOjE3NDYxNDA1NTgsImV4cCI6MTc0NjE0NDE1OH0.plBB6YzrLYEXtcEei7BmBHiY8VYU9vos9sgSB16oW1Y",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nameProduct\": \"Café molido\",\r\n  \"category\": \"Zapatos\",\r\n  \"supplier\": \"Proveedor S.A.\",\r\n  \"stock\": 100,\r\n  \"dateEntry\": \"2025-04-29\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/Almacenadora_app/v1/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"Almacenadora_app",
+						"v1",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar Producto",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODEzZDAzYzY2YmFjMmE5YTAxYmU4ZjgiLCJpYXQiOjE3NDYxNDA1NTgsImV4cCI6MTc0NjE0NDE1OH0.plBB6YzrLYEXtcEei7BmBHiY8VYU9vos9sgSB16oW1Y",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nameProduct\": \"Sabor Limon\",\r\n  \"category\": \"Zapatos\",\r\n  \"supplier\": \"Red Bull\",\r\n  \"stock\": 30,\r\n  \"dateEntry\": \"2025-03-07\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/Almacenadora_app/v1/products/6813d457bc6f9c3ecf733233",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"Almacenadora_app",
+						"v1",
+						"products",
+						"6813d457bc6f9c3ecf733233"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar Producto",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODEzZDAzYzY2YmFjMmE5YTAxYmU4ZjgiLCJpYXQiOjE3NDYxNDA1NTgsImV4cCI6MTc0NjE0NDE1OH0.plBB6YzrLYEXtcEei7BmBHiY8VYU9vos9sgSB16oW1Y",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3001/Almacenadora_app/v1/products/6813d457bc6f9c3ecf733233",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"Almacenadora_app",
+						"v1",
+						"products",
+						"6813d457bc6f9c3ecf733233"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Bucar producto por nombre",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODEzZDAzYzY2YmFjMmE5YTAxYmU4ZjgiLCJpYXQiOjE3NDYxNDA1NTgsImV4cCI6MTc0NjE0NDE1OH0.plBB6YzrLYEXtcEei7BmBHiY8VYU9vos9sgSB16oW1Y",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3001/Almacenadora_app/v1/products/name?name=Café molido",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"Almacenadora_app",
+						"v1",
+						"products",
+						"name"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Café molido"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar producto por categoria",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODEzZDAzYzY2YmFjMmE5YTAxYmU4ZjgiLCJpYXQiOjE3NDYxNDA1NTgsImV4cCI6MTc0NjE0NDE1OH0.plBB6YzrLYEXtcEei7BmBHiY8VYU9vos9sgSB16oW1Y",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3001/Almacenadora_app/v1/products/category?category=Zapatos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"Almacenadora_app",
+						"v1",
+						"products",
+						"category"
+					],
+					"query": [
+						{
+							"key": "category",
+							"value": "Zapatos"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar producto por fecha",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODEzZDAzYzY2YmFjMmE5YTAxYmU4ZjgiLCJpYXQiOjE3NDYxNDA1NTgsImV4cCI6MTc0NjE0NDE1OH0.plBB6YzrLYEXtcEei7BmBHiY8VYU9vos9sgSB16oW1Y",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3001/Almacenadora_app/v1/products/date?date=2025-04-29",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"Almacenadora_app",
+						"v1",
+						"products",
+						"date"
+					],
+					"query": [
+						{
+							"key": "date",
+							"value": "2025-04-29"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
