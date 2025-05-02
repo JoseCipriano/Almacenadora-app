@@ -3,6 +3,7 @@ import cors from "cors"
 import helmet from "helmet"
 import morgan from "morgan"
 import { dbConnection } from "./mongo.js"
+import supplierRoutes from "../src/suppliers/suppliers.routes.js"
 
 
 const middlewares = (app) =>{
@@ -14,7 +15,7 @@ const middlewares = (app) =>{
 }
 
 const routes = (app) =>{
-    //
+    app.use("/Almacenadora_app/v1/supplier", supplierRoutes)
 }
 
 const conectDB = async() =>{
@@ -27,16 +28,15 @@ const conectDB = async() =>{
     }
 }
 
-export const initServer = async() =>{
-    const app  = express()
-    const Port = process.env.PORT || 3000
-    try {
+export const initServer = async () => {
+    const app = express()
+    try{
         middlewares(app)
-        conectDB()
-        //routes(app)
-        app.listen(Port)
-        console.log(`Server init in port ${Port}`)
-    } catch (err) {
-        console.log(`Server falied init ${Port}`)
+        await conectDB()
+        routes(app)
+        app.listen(process.env.PORT)
+        console.log(`Server running on port ${process.env.PORT}`)
+    }catch(err){
+        console.log(`Server init failed: ${err}`)
     }
 }

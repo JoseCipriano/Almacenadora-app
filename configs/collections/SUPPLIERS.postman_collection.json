@@ -1,0 +1,173 @@
+{
+	"info": {
+		"_postman_id": "8cf1dc37-e8dc-4dfc-911d-fa07b5c39a79",
+		"name": "SUPPLIERS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42798822"
+	},
+	"item": [
+		{
+			"name": "crearProveedor",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Fernando Choc\",\r\n  \"contact\": \"Elmer\",\r\n  \"productsSupplied\": \"Carne\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/Almacenadora_app/v1/supplier",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"Almacenadora_app",
+						"v1",
+						"supplier"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getProveedor",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/Almacenadora_app/v1/supplier/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"Almacenadora_app",
+						"v1",
+						"supplier",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getProveedorById",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/Almacenadora_app/v1/supplier/findSupplier/68140ed4e249454e5863093b",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"Almacenadora_app",
+						"v1",
+						"supplier",
+						"findSupplier",
+						"68140ed4e249454e5863093b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateProveedor",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Noah Perez\",\r\n  \"contact\": \"Pollos Bros S.A de C.V.\",\r\n  \"productsSupplied\": \"Pollos\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/Almacenadora_app/v1/supplier/updateSupplier/68140efee249454e5863093f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"Almacenadora_app",
+						"v1",
+						"supplier",
+						"updateSupplier",
+						"68140efee249454e5863093f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteProveedor",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Noah Perez\",\r\n  \"contact\": \"Pollos Bros S.A de C.V.\",\r\n  \"productsSupplied\": \"Pollos\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/Almacenadora_app/v1/supplier/updateSupplier/68140efee249454e5863093f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"Almacenadora_app",
+						"v1",
+						"supplier",
+						"updateSupplier",
+						"68140efee249454e5863093f"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

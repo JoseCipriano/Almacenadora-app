@@ -1,0 +1,54 @@
+[{
+  "_id": {
+    "$oid": "68140ed4e249454e5863093b"
+  },
+  "name": "Carlos Torres",
+  "contact": "Adrian As.",
+  "productsSupplied": [
+    "Articulos de cocina"
+  ],
+  "client": false,
+  "status": true,
+  "createdAt": {
+    "$date": "2025-05-02T00:16:20.456Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-02T00:16:20.456Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68140efee249454e5863093f"
+  },
+  "name": "Noah Perez",
+  "contact": "Pollos Bros S.A de C.V.",
+  "productsSupplied": [
+    "Pollos"
+  ],
+  "client": false,
+  "status": false,
+  "createdAt": {
+    "$date": "2025-05-02T00:17:02.830Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-02T04:35:16.078Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68140f12e249454e58630943"
+  },
+  "name": "Fernando Choc",
+  "contact": "Elmer",
+  "productsSupplied": [
+    "Carne"
+  ],
+  "client": false,
+  "status": true,
+  "createdAt": {
+    "$date": "2025-05-02T00:17:22.196Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-02T00:17:22.196Z"
+  }
+}]
