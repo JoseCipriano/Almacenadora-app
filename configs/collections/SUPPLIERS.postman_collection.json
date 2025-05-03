@@ -1,0 +1,106 @@
+{
+	"info": {
+		"_postman_id": "0537404a-10dc-42bb-8453-0c7791c1f63d",
+		"name": "SUPPLIERS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "42728066"
+	},
+	"item": [
+		{
+			"name": "crearProveedor",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Fernando Choc\",\r\n  \"contact\": \"Elmer\",\r\n  \"productsSupplied\": \"Carne\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3001/Almacenadora_app/v1/supplier"
+			},
+			"response": []
+		},
+		{
+			"name": "getProveedor",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3001/Almacenadora_app/v1/supplier/"
+			},
+			"response": []
+		},
+		{
+			"name": "getProveedorById",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3001/Almacenadora_app/v1/supplier/findSupplier/68140ed4e249454e5863093b"
+			},
+			"response": []
+		},
+		{
+			"name": "updateProveedor",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Noah Perez\",\r\n  \"contact\": \"Pollos Bros S.A de C.V.\",\r\n  \"productsSupplied\": \"Pollos\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3001/Almacenadora_app/v1/supplier/updateSupplier/68140efee249454e5863093f"
+			},
+			"response": []
+		},
+		{
+			"name": "deleteProveedor",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Noah Perez\",\r\n  \"contact\": \"Pollos Bros S.A de C.V.\",\r\n  \"productsSupplied\": \"Pollos\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3001/Almacenadora_app/v1/supplier/updateSupplier/68140efee249454e5863093f"
+			},
+			"response": []
+		}
+	]
+}
