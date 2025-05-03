@@ -1,4 +1,10 @@
 'use strict';
+import express from "express"
+import cors from "cors"
+import helmet from "helmet"
+import morgan from "morgan"
+import { dbConnection } from "./mongo.js"
+import supplierRoutes from "../src/suppliers/suppliers.routes.js"
 
 import express from "express";
 import cors from "cors";
@@ -23,6 +29,8 @@ const routes = (app) => {
     app.use("/Almacenadora_app/v1/products", productRoutes);
     app.use("/Almacenadora_app/v1/auth", authRoutes);
     app.use("/Almacenadora_app/v1/categories", categoryRoutes);
+    app.use("/Almacenadora_app/v1/supplier", supplierRoutes)
+
 }
 
 const conectDB = async() =>{
@@ -35,10 +43,9 @@ const conectDB = async() =>{
     }
 }
 
-export const initServer = async() =>{
-    const app  = express()
-    const Port = process.env.PORT || 3000
-    try {
+export const initServer = async () => {
+    const app = express()
+    try{
         middlewares(app)
         conectDB()
         routes(app)
