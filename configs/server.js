@@ -5,23 +5,12 @@ import helmet from "helmet"
 import morgan from "morgan"
 import { dbConnection } from "./mongo.js"
 import supplierRoutes from "../src/suppliers/suppliers.routes.js"
-<<<<<<< HEAD
-
-import express from "express";
-import cors from "cors";
-import helmet from "helmet";
-import morgan from "morgan";
-import { dbConnection } from "./mongo.js";
-=======
->>>>>>> jcipriano-2020359
 import limiter from '../src/middlewares/validar-cant-peticiones.js';
 import productRoutes from '../src/products/product.routes.js';
 import authRoutes from '../src/auth/auth.routes.js';
 import categoryRoutes from '../src/categories/category.routes.js';
-<<<<<<< HEAD
-=======
 import clientsRoutes from '../src/clients/client.routes.js';
->>>>>>> jcipriano-2020359
+
 
 const middlewares = (app) =>{
     app.use(express.urlencoded({extended: false}))
@@ -37,10 +26,8 @@ const routes = (app) => {
     app.use("/Almacenadora_app/v1/auth", authRoutes);
     app.use("/Almacenadora_app/v1/categories", categoryRoutes);
     app.use("/Almacenadora_app/v1/supplier", supplierRoutes)
-<<<<<<< HEAD
-=======
     app.use("/Almacenadora_app/v1/clients", clientsRoutes)
->>>>>>> jcipriano-2020359
+
 
 }
 
@@ -55,12 +42,10 @@ const conectDB = async() =>{
 }
 
 export const initServer = async () => {
-<<<<<<< HEAD
-    const app = express()
-=======
+
     const app = express();
     const Port = process.env.PORT || 3000;
->>>>>>> jcipriano-2020359
+
     try{
         middlewares(app)
         conectDB()
