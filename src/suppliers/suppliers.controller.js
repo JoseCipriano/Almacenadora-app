@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import Supplier from './suppliers.model.js';
 
 export const createSupplier = async (req, res) => {
@@ -12,6 +13,36 @@ export const createSupplier = async (req, res) => {
             success: true,
             message: 'Proveedor creado exitosamente',
             supplier: newSupplier
+=======
+import {request, response} from 'express';
+import Supplier from './suppliers.model.js';
+import Product from '../products/product.model.js';
+
+export const createSupplier = async (req, res) => {
+    try {
+        const data = req.body;
+
+        const product = await Product.findOne({ nameProduct: data.product });
+        
+        if(!product) {
+            return res.status(404).json({
+                succes: false,
+                message: 'Proveedor no encontrado'
+            });
+        }
+
+        const supplier = new Supplier({
+            ...data,
+            product: product._id
+        });
+
+        await supplier.save();
+
+        return res.status(200).json({
+            success: true,
+            supplier
+            
+>>>>>>> jcipriano-2020359
         });
     } catch (err) {
         return res.status(500).json({
@@ -77,6 +108,7 @@ export const getSupplierById = async (req, res) => {
 export const updateSupplier = async (req, res) => {
     try {
         const { id } = req.params;
+<<<<<<< HEAD
         const { name, contact, productsSupplied, client } = req.body;
 
         const supplier = await Supplier.findByIdAndUpdate(
@@ -86,16 +118,41 @@ export const updateSupplier = async (req, res) => {
         );
 
         if (!supplier) {
+=======
+        const { _id, product, ...data } = req.body;
+
+        const supplierExist = await Supplier.findByIdAndUpdate(id);
+        if (!supplierExist) {
+>>>>>>> jcipriano-2020359
             return res.status(404).json({
                 success: false,
                 message: "Proveedor no encontrado",
             });
         }
 
+<<<<<<< HEAD
         return res.status(200).json({
             success: true,
             message: "Proveedor actualizado",
             supplier
+=======
+        if(product) {
+            const productExist = await Product.findOne({ nameProduct: product });
+            if(!productExist) {
+                return res.status(404).json({
+                    success: false,
+                    message: "Producto no encontrado",
+                });
+            }
+            data.product = productExist._id;
+        }
+        const updateSupplier = await Supplier.findByIdAndUpdate(id, data, {new: true})
+
+        return res.status(200).json({
+            success: true,
+            message: "Proveedor actualizado",
+            supplier: updateSupplier,
+>>>>>>> jcipriano-2020359
         });
 
     } catch (err) {
@@ -108,6 +165,7 @@ export const updateSupplier = async (req, res) => {
 };
 
 export const deleteSupplier = async (req, res) => {
+<<<<<<< HEAD
     try {
         const { id } = req.params;
 
@@ -137,4 +195,24 @@ export const deleteSupplier = async (req, res) => {
             error: err.message
         });
     }
+=======
+   const { id } = req.params;
+   try {
+
+    await Supplier.findByIdAndUpdate(id, { status: false });
+
+    res.status(200).json({
+        success: true,
+        message: "Proveedor eliminado correctamente"
+    })
+    
+   } catch (error) {
+    res.status(500).json({
+        success: false,
+        message: "Error al eliminar el proveedor",
+        error
+    });
+    
+   }
+>>>>>>> jcipriano-2020359
 };

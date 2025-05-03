@@ -1,6 +1,10 @@
 import Product from '../products/product.model.js';
 import User from '../users/user.model.js';
 import Category from '../categories/category.model.js';
+<<<<<<< HEAD
+=======
+import Client from '../clients/client.model.js';
+>>>>>>> jcipriano-2020359
 
 export const existeProductoById = async (id = '') => {
 
@@ -31,4 +35,15 @@ export const existeCategoriaById = async (id = '') => {
     if(!existeCategoria){
         throw new Error(`El ID ${id} no existe`);
     }
+<<<<<<< HEAD
+=======
+}
+
+export const existeClienteById = async (id = '') => {
+
+    const existeCliente = await Client.findById(id);
+    if(!existeCliente){
+        throw new Error(`El ID ${id} no existe`);
+    }
+>>>>>>> jcipriano-2020359
 }

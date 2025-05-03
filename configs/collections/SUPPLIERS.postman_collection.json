@@ -1,9 +1,16 @@
 {
 	"info": {
+<<<<<<< HEAD
 		"_postman_id": "8cf1dc37-e8dc-4dfc-911d-fa07b5c39a79",
 		"name": "SUPPLIERS",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "42798822"
+=======
+		"_postman_id": "0537404a-10dc-42bb-8453-0c7791c1f63d",
+		"name": "SUPPLIERS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "42728066"
+>>>>>>> jcipriano-2020359
 	},
 	"item": [
 		{
@@ -20,6 +27,7 @@
 						}
 					}
 				},
+<<<<<<< HEAD
 				"url": {
 					"raw": "http://localhost:3001/Almacenadora_app/v1/supplier",
 					"protocol": "http",
@@ -33,6 +41,9 @@
 						"supplier"
 					]
 				}
+=======
+				"url": "http://localhost:3001/Almacenadora_app/v1/supplier"
+>>>>>>> jcipriano-2020359
 			},
 			"response": []
 		},
@@ -53,6 +64,7 @@
 						}
 					}
 				},
+<<<<<<< HEAD
 				"url": {
 					"raw": "http://localhost:3001/Almacenadora_app/v1/supplier/",
 					"protocol": "http",
@@ -67,6 +79,9 @@
 						""
 					]
 				}
+=======
+				"url": "http://localhost:3001/Almacenadora_app/v1/supplier/"
+>>>>>>> jcipriano-2020359
 			},
 			"response": []
 		},
@@ -87,6 +102,7 @@
 						}
 					}
 				},
+<<<<<<< HEAD
 				"url": {
 					"raw": "http://localhost:3001/Almacenadora_app/v1/supplier/findSupplier/68140ed4e249454e5863093b",
 					"protocol": "http",
@@ -102,6 +118,9 @@
 						"68140ed4e249454e5863093b"
 					]
 				}
+=======
+				"url": "http://localhost:3001/Almacenadora_app/v1/supplier/findSupplier/68140ed4e249454e5863093b"
+>>>>>>> jcipriano-2020359
 			},
 			"response": []
 		},
@@ -119,6 +138,7 @@
 						}
 					}
 				},
+<<<<<<< HEAD
 				"url": {
 					"raw": "http://localhost:3001/Almacenadora_app/v1/supplier/updateSupplier/68140efee249454e5863093f",
 					"protocol": "http",
@@ -134,6 +154,9 @@
 						"68140efee249454e5863093f"
 					]
 				}
+=======
+				"url": "http://localhost:3001/Almacenadora_app/v1/supplier/updateSupplier/68140efee249454e5863093f"
+>>>>>>> jcipriano-2020359
 			},
 			"response": []
 		},
@@ -151,6 +174,7 @@
 						}
 					}
 				},
+<<<<<<< HEAD
 				"url": {
 					"raw": "http://localhost:3001/Almacenadora_app/v1/supplier/updateSupplier/68140efee249454e5863093f",
 					"protocol": "http",
@@ -166,6 +190,9 @@
 						"68140efee249454e5863093f"
 					]
 				}
+=======
+				"url": "http://localhost:3001/Almacenadora_app/v1/supplier/updateSupplier/68140efee249454e5863093f"
+>>>>>>> jcipriano-2020359
 			},
 			"response": []
 		}

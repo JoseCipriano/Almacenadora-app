@@ -9,6 +9,7 @@ const supplierSchema = Schema({
     type: String,
     required: true
   },
+<<<<<<< HEAD
   productsSupplied: {
     type: [String],
     default: []
@@ -16,6 +17,13 @@ const supplierSchema = Schema({
   client: {
     type: Boolean,
     default: false
+=======
+  product: {
+    type: Schema.Types.ObjectId,
+    ref: 'Product',
+    required: true
+    
+>>>>>>> jcipriano-2020359
   },
   status: {
     type: Boolean,

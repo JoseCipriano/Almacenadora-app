@@ -1,8 +1,8 @@
 import { Router } from "express";
 import { check } from "express-validator";
 import { deleteFileOnError } from "../middlewares/delete-file-on-error.js";
-import { createCategory, updateCategory, deleteCategory, getCategories } from "./category.controller.js";
-import { existeCategoriaById } from "../helpers/db-validator.js";
+import { createClient, updateClient, deleteClient, getClients } from "./client.controller.js";
+import { existeClienteById } from "../helpers/db-validator.js";
 import { validarCampos } from "../middlewares/validar-campos.js";
 import { validarJWT, esAdminRole } from "../middlewares/validar-jwt.js";
 
@@ -12,13 +12,8 @@ router.get(
     "/",
     [
         validarJWT,
-<<<<<<< HEAD
-        esAdminRole
-=======
-       
->>>>>>> jcipriano-2020359
     ],
-    getCategories
+    getClients
 )
 
 router.post(
@@ -29,7 +24,7 @@ router.post(
         validarCampos,
         deleteFileOnError
     ],
-    createCategory
+    createClient
 )
 
 router.put(
@@ -38,11 +33,11 @@ router.put(
         validarJWT,
         esAdminRole,
         check("id", "No es un ID válido").isMongoId(),
-        check("id").custom(existeCategoriaById),
+        check("id").custom(existeClienteById),
         validarCampos,
         deleteFileOnError
     ],
-    updateCategory
+    updateClient
 )
 
 router.delete(
@@ -54,7 +49,9 @@ router.delete(
         validarCampos,
         deleteFileOnError
     ],
-    deleteCategory
+
+    deleteClient
 )
 
 export default router;
+
