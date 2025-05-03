@@ -1,19 +1,3 @@
-<<<<<<< HEAD
-import Supplier from './suppliers.model.js';
-
-export const createSupplier = async (req, res) => {
-    try {
-        const { name, contact, productsSupplied = [], client = false } = req.body;
-
-        const newSupplier = new Supplier({name, contact, productsSupplied, client});
-
-        await newSupplier.save();
-
-        return res.status(201).json({
-            success: true,
-            message: 'Proveedor creado exitosamente',
-            supplier: newSupplier
-=======
 import {request, response} from 'express';
 import Supplier from './suppliers.model.js';
 import Product from '../products/product.model.js';
@@ -42,7 +26,6 @@ export const createSupplier = async (req, res) => {
             success: true,
             supplier
             
->>>>>>> jcipriano-2020359
         });
     } catch (err) {
         return res.status(500).json({
@@ -108,34 +91,15 @@ export const getSupplierById = async (req, res) => {
 export const updateSupplier = async (req, res) => {
     try {
         const { id } = req.params;
-<<<<<<< HEAD
-        const { name, contact, productsSupplied, client } = req.body;
-
-        const supplier = await Supplier.findByIdAndUpdate(
-            id,
-            { name, contact, productsSupplied, client },
-            { new: true }
-        );
-
-        if (!supplier) {
-=======
         const { _id, product, ...data } = req.body;
-
+        
         const supplierExist = await Supplier.findByIdAndUpdate(id);
         if (!supplierExist) {
->>>>>>> jcipriano-2020359
             return res.status(404).json({
                 success: false,
                 message: "Proveedor no encontrado",
             });
         }
-
-<<<<<<< HEAD
-        return res.status(200).json({
-            success: true,
-            message: "Proveedor actualizado",
-            supplier
-=======
         if(product) {
             const productExist = await Product.findOne({ nameProduct: product });
             if(!productExist) {
@@ -152,7 +116,7 @@ export const updateSupplier = async (req, res) => {
             success: true,
             message: "Proveedor actualizado",
             supplier: updateSupplier,
->>>>>>> jcipriano-2020359
+
         });
 
     } catch (err) {
@@ -165,37 +129,6 @@ export const updateSupplier = async (req, res) => {
 };
 
 export const deleteSupplier = async (req, res) => {
-<<<<<<< HEAD
-    try {
-        const { id } = req.params;
-
-        const supplier = await Supplier.findByIdAndUpdate(
-            id,
-            { status: false },
-            { new: true }
-        );
-
-        if (!supplier) {
-            return res.status(404).json({
-                success: false,
-                message: "Proveedor no encontrado"
-            });
-        }
-
-        return res.status(200).json({
-            success: true,
-            message: "Proveedor eliminado",
-            supplier
-        });
-
-    } catch (err) {
-        return res.status(500).json({
-            success: false,
-            message: "Error al eliminar el proveedor",
-            error: err.message
-        });
-    }
-=======
    const { id } = req.params;
    try {
 
@@ -214,5 +147,4 @@ export const deleteSupplier = async (req, res) => {
     });
     
    }
->>>>>>> jcipriano-2020359
 };
