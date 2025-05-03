@@ -12,11 +12,6 @@ router.get(
     "/",
     [
         validarJWT,
-<<<<<<< HEAD
-        esAdminRole
-=======
-       
->>>>>>> jcipriano-2020359
     ],
     getCategories
 )
