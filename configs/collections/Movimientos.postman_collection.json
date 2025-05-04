@@ -1,0 +1,166 @@
+{
+	"info": {
+		"_postman_id": "0baeec2c-62df-4716-93ef-eef13bc2e611",
+		"name": "Movimientos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42124475"
+	},
+	"item": [
+		{
+			"name": "Agregar movimiento",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODE2YjEzNzVmZjI5MTY3ZjY1ZTFhMzIiLCJpYXQiOjE3NDYzMTc2MjksImV4cCI6MTc0NjMyMTIyOX0.zD-H6tH9iTIauW4g7WdMmlTXkLXRr72jfV98Wq4kIX4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"producto\": \"Producto C\",\r\n    \"cantidad\": 10,\r\n    \"empleadoEncargado\": \"Juan Perez\",\r\n    \"fechaEntrada\": \"2023-12-01\",\r\n    \"fechaSalida\": \"2023-12-10\",\r\n    \"estado\": \"Entrada\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/Almacenadora_app/v1/movements",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"Almacenadora_app",
+						"v1",
+						"movements"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar movimientos",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/Almacenadora_app/v1/movements",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"Almacenadora_app",
+						"v1",
+						"movements"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar movimiento por id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/Almacenadora_app/v1/movements/6816d2ad612af4e6ff1223a6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"Almacenadora_app",
+						"v1",
+						"movements",
+						"6816d2ad612af4e6ff1223a6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar movimiento",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"producto\": \"6816ca390ed9ae18a8d5c350\",  // ObjectId del producto\r\n  \"cantidad\": 15,\r\n  \"empleadoEncargado\": \"Carlos Ramos\",\r\n  \"fechaEntrada\": \"2023-12-01\",\r\n  \"fechaSalida\": \"2023-12-15\",\r\n  \"estado\": \"Entrada\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/Almacenadora_app/v1/movements/6816cf319837c4acc2772dca",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"Almacenadora_app",
+						"v1",
+						"movements",
+						"6816cf319837c4acc2772dca"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar Moviiento",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/Almacenadora_app/v1/movements/6816d472612af4e6ff1223ad",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"Almacenadora_app",
+						"v1",
+						"movements",
+						"6816d472612af4e6ff1223ad"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

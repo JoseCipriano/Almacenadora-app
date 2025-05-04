@@ -1,0 +1,128 @@
+[{
+  "_id": {
+    "$oid": "6816cf319837c4acc2772dca"
+  },
+  "producto": "6816ca390ed9ae18a8d5c350",
+  "cantidad": 15,
+  "empleadoEncargado": "Carlos Ramos",
+  "fechaEntrada": {
+    "$date": "2023-12-01T00:00:00.000Z"
+  },
+  "fechaSalida": {
+    "$date": "2023-12-15T00:00:00.000Z"
+  },
+  "estado": "Entrada",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6816d2ad612af4e6ff1223a6"
+  },
+  "producto": "Producto A",
+  "cantidad": 10,
+  "empleadoEncargado": "Juan Perez",
+  "fechaEntrada": {
+    "$date": "2023-12-01T00:00:00.000Z"
+  },
+  "fechaSalida": {
+    "$date": "2023-12-10T00:00:00.000Z"
+  },
+  "estado": "Entrada",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6816e0ccf197291e50d3db78"
+  },
+  "producto": "Producto C",
+  "cantidad": 10,
+  "empleadoEncargado": "Juan Perez",
+  "fechaEntrada": {
+    "$date": "2023-12-01T00:00:00.000Z"
+  },
+  "fechaSalida": {
+    "$date": "2023-12-10T00:00:00.000Z"
+  },
+  "estado": "Entrada",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6816e11f9837c4acc2772deb"
+  },
+  "producto": "Producto C",
+  "cantidad": 10,
+  "empleadoEncargado": "Juan Perez",
+  "fechaEntrada": {
+    "$date": "2023-12-01T00:00:00.000Z"
+  },
+  "fechaSalida": {
+    "$date": "2023-12-10T00:00:00.000Z"
+  },
+  "estado": "Entrada",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6816f30d5ad9ef13625c7d4a"
+  },
+  "producto": "Producto C",
+  "cantidad": 10,
+  "empleadoEncargado": "Juan Perez",
+  "fechaEntrada": {
+    "$date": "2023-12-01T00:00:00.000Z"
+  },
+  "fechaSalida": {
+    "$date": "2023-12-10T00:00:00.000Z"
+  },
+  "estado": "Entrada",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6816f3fe5ad9ef13625c7d4e"
+  },
+  "producto": "Producto C",
+  "cantidad": 10,
+  "empleadoEncargado": "Juan Perez",
+  "fechaEntrada": {
+    "$date": "2023-12-01T00:00:00.000Z"
+  },
+  "fechaSalida": {
+    "$date": "2023-12-10T00:00:00.000Z"
+  },
+  "estado": "Entrada",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6816f417d1d3fb27bf4da611"
+  },
+  "producto": "Producto C",
+  "cantidad": 10,
+  "empleadoEncargado": "Juan Perez",
+  "fechaEntrada": {
+    "$date": "2023-12-01T00:00:00.000Z"
+  },
+  "fechaSalida": {
+    "$date": "2023-12-10T00:00:00.000Z"
+  },
+  "estado": "Entrada",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6816f41f5ad9ef13625c7d53"
+  },
+  "producto": "Producto C",
+  "cantidad": 10,
+  "empleadoEncargado": "Juan Perez",
+  "fechaEntrada": {
+    "$date": "2023-12-01T00:00:00.000Z"
+  },
+  "fechaSalida": {
+    "$date": "2023-12-10T00:00:00.000Z"
+  },
+  "estado": "Entrada",
+  "__v": 0
+}]
