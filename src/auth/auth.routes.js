@@ -9,7 +9,6 @@ router.post (
     '/login',
     loginValidator,
     deleteFileOnError,
-
     login
 );
 

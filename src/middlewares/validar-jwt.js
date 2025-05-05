@@ -1,57 +1,33 @@
-import jwt from 'jsonwebtoken';
-import Usuario from '../users/user.model.js';
+import User from "../users/user.model.js";
+import jwt from "jsonwebtoken";
 
-export const validarJWT = async (req, res, next) => {
-
+export const validarJWT = async (req, resp, next)=>{
     const token = req.header("x-token");
 
     if(!token){
-        return res.status(401).json({
-            msg: "No hay token en la peticion"
+        return resp.status(401).json({
+            msg: "No hay token para la petición"
         })
     }
-
     try {
-        
-        const { uid } = jwt.verify(token, process.env.SECRETORPRIVATEKEY);
-
-        const usuario = await Usuario.findById(uid);
-
+        const {uid} = jwt.verify(token, process.env.SECRETORPRIVATEKEY)
+        const usuario = await User.findById(uid)
         if(!usuario){
-            return res.status(401).json({
-                msg: 'Usuario no existe en la base de datos'
+            return resp.status(401).json({
+                msg:"usuario no existe en la base de datos"
             })
         }
-
-        if(!usuario.estado){
-            return res.status(401).json({
-                msg: 'Token no valido - usuarios con estado: false'
+        if(!usuario.status){
+            return resp.status(401).json({
+                msg:"Token no valido - usuario con estado: False"
             })
         }
-
-        req.usuario = usuario;
-
+        req.user = usuario;
         next();
     } catch (e) {
-        console.log(e);
-        res.status(401).json({
+        console.log(e)
+        resp.status(401).json({
             msg: "Token no valido"
         })
     }
 }
-
-export const esAdminRole = (req, res, next) => {
-    if (!req.usuario) {
-        return res.status(500).json({
-            msg: "Se quiere verificar el rol sin validar el token primero"
-        });
-    }
-
-    if (req.usuario.role !== "ADMIN") {
-        return res.status(403).json({
-            msg: "No tienes el rol de Administrador para realizar esta acción"
-        });
-    }
-
-    next();
-};

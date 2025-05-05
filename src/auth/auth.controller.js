@@ -15,26 +15,7 @@ export const login = async (req, res) => {
             $or: [{ email: lowerEmail }, { username: lowerUsername }]
         });
 
-        console.log(lowerUsername)
-
-        if(!user){
-            return res.status(400).json({
-                msg: 'Credenciales incorrectas, Correo no existe en la base de datos'
-            });
-        }
-
-        if(!user.estado){
-            return res.status(400).json({
-                msg: 'El usuario no existe en la base de datos'
-            });
-        }
-
-        const validPassword = await verify(user.password, password);
-        if(!validPassword){
-            return res.status(400).json({
-                msg: 'La contraseña es incorrecta'
-            });
-        }
+        await verify(user.password, password);
 
         const token = await generarJWT( user.id );
 
