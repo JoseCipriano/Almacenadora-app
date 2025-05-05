@@ -4,7 +4,8 @@ import { deleteFileOnError } from '../middlewares/delete-file-on-error.js';
 import { createProduct, updateProduct, deleteProduct, getProductsByName, getProductsByCategory, getProductsByDate } from "./product.controller.js";
 import { existeProductoById } from "../helpers/db-validator.js";
 import { validarCampos } from "../middlewares/validar-campos.js";
-import { validarJWT, esAdminRole } from "../middlewares/validar-jwt.js";
+import { validarJWT } from "../middlewares/validar-jwt.js";
+import { esAdminRole } from "../middlewares/validateRole.js";
 
 const router = Router();
 
@@ -12,7 +13,7 @@ router.get(
     "/Name", 
     [
         validarJWT,
-        esAdminRole
+        esAdminRole("ADMIN")
     ],
     getProductsByName
 )
@@ -21,7 +22,7 @@ router.get(
     "/Category",
     [
         validarJWT,
-        esAdminRole
+        esAdminRole("ADMIN")
     ],
     getProductsByCategory
 )
@@ -30,16 +31,16 @@ router.get(
     "/Date", 
     [
         validarJWT,
-        esAdminRole
+        esAdminRole("ADMIN")
     ],
     getProductsByDate
 )
 
 router.post(
-    "/",
+    "/newProduct",
     [
         validarJWT,
-        esAdminRole,
+        esAdminRole("ADMIN"),
         validarCampos,
         deleteFileOnError   
     ],
@@ -50,7 +51,7 @@ router.put(
     "/:id",
     [
         validarJWT,
-        esAdminRole,
+        esAdminRole("ADMIN"),
         check("id", "No es un ID válido").isMongoId(),
         check("id").custom(existeProductoById),
         validarCampos,
@@ -63,7 +64,7 @@ router.delete(
     "/:id",
     [
         validarJWT,
-        esAdminRole,
+        esAdminRole("ADMIN"),
         check("id", "No es un ID válido").isMongoId(),
         validarCampos,
         deleteFileOnError
