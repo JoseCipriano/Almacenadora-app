@@ -1,4 +1,3 @@
-import {request, response} from 'express';
 import Supplier from './suppliers.model.js';
 import Product from '../products/product.model.js';
 
@@ -6,26 +5,13 @@ export const createSupplier = async (req, res) => {
     try {
         const data = req.body;
 
-        const product = await Product.findOne({ nameProduct: data.product });
-        
-        if(!product) {
-            return res.status(404).json({
-                succes: false,
-                message: 'Proveedor no encontrado'
-            });
-        }
-
-        const supplier = new Supplier({
-            ...data,
-            product: product._id
+        const supplier = await Supplier.create({
+            ...data
         });
-
-        await supplier.save();
 
         return res.status(200).json({
             success: true,
             supplier
-            
         });
     } catch (err) {
         return res.status(500).json({

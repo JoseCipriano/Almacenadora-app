@@ -3,7 +3,7 @@ import { createSupplier, getSuppliers, getSupplierById, updateSupplier, deleteSu
 
 const router = Router();
 
-router.post('/', createSupplier);
+router.post('/newSupplier', createSupplier);
 
 router.get('/', getSuppliers);
 

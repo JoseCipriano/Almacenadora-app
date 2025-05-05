@@ -9,12 +9,7 @@ const supplierSchema = Schema({
     type: String,
     required: true
   },
-  product: {
-    type: Schema.Types.ObjectId,
-    ref: 'Product',
-    required: true 
-  },
-    status: {
+  status: {
     type: Boolean,
     default: true
   }
