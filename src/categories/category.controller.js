@@ -4,7 +4,7 @@ import Category from './category.model.js';
 export const getCategories = async (req = request, res = response) => {
     try {
         const { limite = 10, desde = 0} = req.query;
-        const query = { estado: true};
+        const query = { status: true};
 
         const [total, categories] = await Promise.all([
             Category.countDocuments(query),
@@ -13,16 +13,16 @@ export const getCategories = async (req = request, res = response) => {
                 .limit(Number(limite))
         ])
 
-        res.status(200).json({
+        return res.status(200).json({
             success: true,
             total,
             categories
         })
     } catch (error) {
-        res.status(500).json({
+        return res.status(500).json({
             succes: false,
             msg: 'Error al obtener las categorias',
-            error
+            error: error.message
         })
     }
 }
@@ -31,22 +31,20 @@ export const createCategory = async (req, res) => {
     try {
         const data = req.body;
 
-        const category = new Category({
+        const category = await Category.create({
             ...data
-        });
+        })
 
-        await category.save();
-
-        res.status(200).json({
+        return res.status(200).json({
             succes: true,
             category
         })
 
     } catch (error) {
-        res.status(500).json({
+        return res.status(500).json({
             succes: false,
             message: 'Error al crear la categoria',
-            error
+            error: error.message
         });
     }
 }
@@ -58,17 +56,17 @@ export const updateCategory = async (req, res = response) => {
 
         const category = await Category.findByIdAndUpdate(id, data, {new: true});
 
-        res.status(200).json({
+        return res.status(200).json({
             succes: true,
             msg: 'Categoria Actualizada',
             category
         })
 
     } catch (error) {
-        res.status(500).json({
+        return res.status(500).json({
             succes: false,
             msg: 'Error al actualizar la categoria',
-            error
+            error: error.message
         });
     }
 }
@@ -79,18 +77,18 @@ export const deleteCategory = async (req, res) => {
 
     try {
         
-        await Category.findByIdAndUpdate(id, { estado: false })
+        await Category.findByIdAndUpdate(id, { status: false })
 
-        res.status(200).json({
+        return res.status(200).json({
             succes: true,
             message: 'Categoria eliminada exitosamente'
         })
 
     } catch (error) {
-        res.status(500).json({
+        return res.status(500).json({
             succes: false,
             message: 'Error al eliminar la categoria',
-            error
+            error: error.message
         });
     }
 }

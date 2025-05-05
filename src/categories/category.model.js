@@ -1,6 +1,6 @@
 import { Schema, model } from "mongoose";
 
-const CategorySchema = Schema({
+const CategorySchema = new Schema({
     nameCategory:{
         type: String,
         unique: [true, "La categoria ya existe"],
@@ -12,7 +12,7 @@ const CategorySchema = Schema({
         required: [true, "La descripcion es requerida"],
         maxLength: [500, "El maximo permitido son 500 caracteres"]
     },
-    estado:{
+    status:{
         type: Boolean,
         default: true
     }
