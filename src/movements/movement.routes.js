@@ -4,11 +4,36 @@ import { getMovements, createMovement, getMovementById, deleteMovement, updateMo
 
 const router = Router();
 
+router.get(
+    '/callMovements', 
+    getMovements
+); 
 
-router.get('/', getMovements); 
-router.post('/', createMovement); 
-router.get('/:id', getMovementById);  
-router.put('/:id', updateMovement);  
-router.delete('/:id', deleteMovement);  
+router.post(
+    '/newMovement', 
+    createMovement
+); 
+
+router.get(
+    '/movementId/:id', 
+    getMovementById
+);  
+
+router.put(
+    '/updateMovement/:id', 
+    updateMovement
+);  
+
+router.delete(
+    '/deleteMovement/:id', 
+    deleteMovement
+);  
 
 export default router;
+/*
+        validateCantidad, 
+        validateEmpleadoEncargado, 
+        validateEstado, 
+        validateFechas, 
+        validateProducto,
+*/
