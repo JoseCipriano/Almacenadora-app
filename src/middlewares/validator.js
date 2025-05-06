@@ -1,6 +1,7 @@
-import { body } from 'express-validator';
+import { body, validationResult } from 'express-validator';
 import { validarCampos } from "./validar-campos.js";
 import { existenteEmail, existenteUsername, noExistenteEmail, noExistenteUsername} from "../helpers/db-validator.js";
+import { validarJWT } from './validar-jwt.js';
 
 
 export const registerValidator = [
@@ -24,3 +25,4 @@ export const loginValidator = [
     body("password", "Password must be at least 8 characters").isLength({min: 8}),
     validarCampos
 ]
+

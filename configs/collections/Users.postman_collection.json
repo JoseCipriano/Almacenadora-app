@@ -1,0 +1,209 @@
+{
+	"info": {
+		"_postman_id": "f305da79-97c9-4402-98c5-bb6bbb1d5bfb",
+		"name": "Users",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42728066"
+	},
+	"item": [
+		{
+			"name": "Listar Users",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODE1OTUxYzYyYWEwNWVjYmIzMjVhZWEiLCJpYXQiOjE3NDY0OTk5NjUsImV4cCI6MTc0NjUwMzU2NX0.Q6nPmwjpQlF1vMJI60T4cAVT94bBqDa_LTTttRcR_Sw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/Almacenadora_app/v1/user/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"Almacenadora_app",
+						"v1",
+						"user",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Profile",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODE1OTUxYzYyYWEwNWVjYmIzMjVhZWEiLCJpYXQiOjE3NDY0OTk5NjUsImV4cCI6MTc0NjUwMzU2NX0.Q6nPmwjpQlF1vMJI60T4cAVT94bBqDa_LTTttRcR_Sw",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/Almacenadora_app/v1/user/profile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"Almacenadora_app",
+						"v1",
+						"user",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetUserbyName",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODE1OTUxYzYyYWEwNWVjYmIzMjVhZWEiLCJpYXQiOjE3NDY0OTk5NjUsImV4cCI6MTc0NjUwMzU2NX0.Q6nPmwjpQlF1vMJI60T4cAVT94bBqDa_LTTttRcR_Sw",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/Almacenadora_app/v1/user/findUserByName/Alex",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"Almacenadora_app",
+						"v1",
+						"user",
+						"findUserByName",
+						"Alex"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODE1OTUxYzYyYWEwNWVjYmIzMjVhZWEiLCJpYXQiOjE3NDY0OTk5NjUsImV4cCI6MTc0NjUwMzU2NX0.Q6nPmwjpQlF1vMJI60T4cAVT94bBqDa_LTTttRcR_Sw",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetUserbyId",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODE1OTUxYzYyYWEwNWVjYmIzMjVhZWEiLCJpYXQiOjE3NDY0OTk5NjUsImV4cCI6MTc0NjUwMzU2NX0.Q6nPmwjpQlF1vMJI60T4cAVT94bBqDa_LTTttRcR_Sw",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/Almacenadora_app/v1/user/6818f659693090876a8522f3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"Almacenadora_app",
+						"v1",
+						"user",
+						"6818f659693090876a8522f3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateUser",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODE1OTUxYzYyYWEwNWVjYmIzMjVhZWEiLCJpYXQiOjE3NDY0OTk5NjUsImV4cCI6MTc0NjUwMzU2NX0.Q6nPmwjpQlF1vMJI60T4cAVT94bBqDa_LTTttRcR_Sw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Diego\",\r\n    \"username\": \"katerine\",\r\n    \"email\": \"kaskda@gmail.com\",\r\n    \"phone\": \"12345678\",\r\n    \"password\": \"12345678\",\r\n    \"role\": \"EMPLEADO\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/Almacenadora_app/v1/user/updateUser/6818f659693090876a8522f3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"Almacenadora_app",
+						"v1",
+						"user",
+						"updateUser",
+						"6818f659693090876a8522f3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DelteUser",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODE1OTUxYzYyYWEwNWVjYmIzMjVhZWEiLCJpYXQiOjE3NDY1MDE4MjMsImV4cCI6MTc0NjUwNTQyM30.cBkkUYWkvx7nbjcK0ZbCaFhsk88-O2eLiAhDNP_9uTc",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/Almacenadora_app/v1/user/deleteUser/6818f659693090876a8522f3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"Almacenadora_app",
+						"v1",
+						"user",
+						"deleteUser",
+						"6818f659693090876a8522f3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -13,6 +13,7 @@ router.post (
 );
 
 router.post (
+
     '/register',
     registerValidator,
     deleteFileOnError,

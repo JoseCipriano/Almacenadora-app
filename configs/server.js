@@ -14,6 +14,7 @@ import productRoutes from '../src/products/product.routes.js';
 import authRoutes from '../src/auth/auth.routes.js';
 import categoryRoutes from '../src/categories/category.routes.js';
 import clientsRoutes from '../src/clients/client.routes.js';
+import userRoutes from '../src/users/user.routes.js';
 
 const middlewares = (app) => {
     app.use(express.urlencoded({ extended: false }));
@@ -32,6 +33,7 @@ const routes = (app) => {
     app.use("/Almacenadora_app/v1/supplier", supplierRoutes)
     app.use("/Almacenadora_app/v1/clients", clientsRoutes)
     app.use("/Almacenadora_app/v1/movements",  movementRoutes)
+    app.use("/Almacenadora_app/v1/user", userRoutes)
 }
 
 

@@ -2,8 +2,7 @@ import Product from '../products/product.model.js';
 import User from '../users/user.model.js';
 import Category from '../categories/category.model.js';
 import Client from '../clients/client.model.js';
-import Role from "../role/roleModel.js";
-import Supplier from "../suppliers/suppliers.model.js";
+import Role from "../role/roleModel.js"
 
 export const existeProductoById = async (id = '') => {
 
@@ -74,32 +73,4 @@ export const existeClienteById = async (id = '') => {
         throw new Error(`El ID ${id} no existe`);
     }
 
-}
-
-export const noExistenteCategory = async (nameCategory = "") => {
-
-    const existeCategoria = await Category.findOne({ nameCategory })
-
-    if(!existeCategoria){
-        throw new Error(`La categoria ${nameCategory} no existe`)
-    }
-}
-
-export const noExistenteSupplier = async (name = "") => {
-
-    const existenteSupplier = await Supplier.findOne({ name })
-
-    if(!existenteSupplier){
-        throw new Error(`El proveedor ${name} no existe`)
-    }
-
-}
-
-export const existeProveedorById = async (id= '') => {
-
-    const existeProveedor = await Supplier.findById(id);
-    
-    if(!existeProveedor){
-        throw new Error(`El ID ${id} no existe`)
-    }
 }
