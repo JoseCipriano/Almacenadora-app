@@ -1,54 +1,33 @@
 import { Router } from "express";
-import { check } from "express-validator";
-import { deleteFileOnError } from "../middlewares/delete-file-on-error.js";
 import { createCategory, updateCategory, deleteCategory, getCategories } from "./category.controller.js";
-import { existeCategoriaById } from "../helpers/db-validator.js";
-import { validarCampos } from "../middlewares/validar-campos.js";
 import { validarJWT } from "../middlewares/validar-jwt.js";
+import { validatorCreateCategory, validatorUpdateCategory, validatorDeleteCategory } from "../middlewares/validator-Categories.js";
 import { esAdminRole } from "../middlewares/validateRole.js";
 
 const router = Router();
 
 router.get(
     "/",
-    [
-        validarJWT,
-    ],
+    validarJWT,
+    esAdminRole,
     getCategories
 )
 
 router.post(
     "/addCategory",
-    [
-        validarJWT,
-        esAdminRole("ADMIN"),
-        validarCampos
-    ],
+    validatorCreateCategory,
     createCategory
 )
 
 router.put(
     "/:id",
-    [
-        validarJWT,
-        esAdminRole("ADMIN"),
-        check("id", "No es un ID válido").isMongoId(),
-        check("id").custom(existeCategoriaById),
-        validarCampos,
-        deleteFileOnError
-    ],
+    validatorUpdateCategory,
     updateCategory
 )
 
 router.delete(
     "/:id",
-    [
-        validarJWT,
-        esAdminRole("ADMIN"),
-        check("id", "No es un ID válido").isMongoId(),
-        validarCampos,
-        deleteFileOnError
-    ],
+    validatorDeleteCategory,
     deleteCategory
 )
 
