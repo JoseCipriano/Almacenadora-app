@@ -120,6 +120,10 @@ export const deleteSupplier = async (req, res) => {
 
     await Supplier.findByIdAndUpdate(id, { status: false });
 
+    const defaultSup = await Supplier.findOne({name: "Without Supplier"})
+
+    await Product.updateMany({supplier: id}, {supplier: defaultSup._id})
+
     res.status(200).json({
         success: true,
         message: "Proveedor eliminado correctamente"

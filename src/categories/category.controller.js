@@ -1,5 +1,6 @@
 import { request, response } from "express";
 import Category from './category.model.js';
+import Product from "../products/product.model.js";
 
 export const getCategories = async (req = request, res = response) => {
     try {
@@ -78,6 +79,10 @@ export const deleteCategory = async (req, res) => {
     try {
         
         await Category.findByIdAndUpdate(id, { status: false })
+
+        const defaultCat = await Category.findOne({nameCategory: "Uncategorized"})
+
+        await Product.updateMany({category: id}, {category: defaultCat._id})
 
         return res.status(200).json({
             succes: true,

@@ -1,8 +1,6 @@
-import { body, validationResult } from 'express-validator';
+import { body } from 'express-validator';
 import { validarCampos } from "./validar-campos.js";
 import { existenteEmail, existenteUsername, noExistenteEmail, noExistenteUsername} from "../helpers/db-validator.js";
-import { validarJWT } from './validar-jwt.js';
-
 
 export const registerValidator = [
     body("name", "The name is required").not().isEmpty(),

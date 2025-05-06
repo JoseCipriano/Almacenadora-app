@@ -54,10 +54,10 @@ export const createClient = async (req, res) => {
     }
 }
 
-export const updateClient = async (req, res = response) => {
+export const updateClient = async (req, res) => {
     try {
         const { id } = req.params;
-        const { _id, ...data } = req.body;
+        const data  = req.body;
 
         const client = await Client.findByIdAndUpdate(id, data, {new: true});
 
@@ -81,15 +81,15 @@ export const deleteClient = async (req, res ) => {
     const { id } = req.params;
 
     try {
-        await Client.findByIdAndUpdate(id, {estado: false})
+        await Client.findByIdAndUpdate(id, {estado: false}, {new: true})
 
-        res.status(200).json({
+        return res.status(200).json({
             success: true,
             msg: 'Cliente eliminado'
         })
         
     } catch (error) {
-        res.status(500).json({
+       return res.status(500).json({
             success: false,
             msg: 'Error al eliminar el cliente',
             error

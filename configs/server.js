@@ -3,12 +3,15 @@ import express from "express";
 import cors from "cors";
 import helmet from "helmet";
 import morgan from "morgan";
-import { dbConnection } from "./mongo.js";
 import { hash } from "argon2";
+import { dbConnection } from "./mongo.js";
 
 import User from "../src/users/user.model.js";
-import movementRoutes from "../src/movements/movement.routes.js";
+import Supplier from "../src/suppliers/suppliers.model.js";
+import Category from "../src/categories/category.model.js";
+
 import supplierRoutes from "../src/suppliers/suppliers.routes.js"
+import movementRoutes from "../src/movements/movement.routes.js";
 import limiter from '../src/middlewares/validar-cant-peticiones.js';
 import productRoutes from '../src/products/product.routes.js';
 import authRoutes from '../src/auth/auth.routes.js';
@@ -83,7 +86,7 @@ export const defaultAdmin = async() =>{
                 role: "ADMIN"
             })
             await adminUser.save()
-            console.log("Administrador por defecto ha sido creado exitosamente!!!")
+            console.log("ADMINISTRADOR CREADO CON EXITO!!!")
         }
         if(existAdmin){
             console.log("Ya se ha generado el Administrador")
@@ -91,5 +94,50 @@ export const defaultAdmin = async() =>{
 
     } catch (er) {
         console.error("Error al crear el Administrador ", er)
+    }
+}
+
+export const defaultCategory = async() =>{
+    try {
+
+        const nameDefaultCategory = "Uncategorized"
+        
+        const existCategory = await Category.findOne({nameCategory: nameDefaultCategory})
+
+        if(!existCategory){
+            const defaultCat = new Category({
+                nameCategory: "Uncategorized",
+                description: "Sin categoria definida, hecha para productos sin categoria"
+            })
+            await defaultCat.save()
+            console.log("CATEGORIA POR DEFECTO CREADA CON EXITO!!!")
+        }else if(existCategory){
+            console.log("Ya se ha generado la categoria por defecto")
+        }
+
+    } catch (err) {
+        console.error("Error al crear la categoria por defecto", err)
+    }
+}
+
+export const defaultSupplier = async() =>{
+    try {
+        const nameDefault = "Without Supplier"
+        const defaultContact = "-----------"
+        const existDefault = await Supplier.findOne({name: nameDefault})
+
+        if(!existDefault){
+            const defaultCateg = new Supplier({
+                name: nameDefault,
+                contact: defaultContact
+            })
+            await defaultCateg.save()
+            console.log("PROVEEDOR POR DEFECTO CREADO CON EXITO!!!")
+        }else if(existDefault){
+            console.log("El proveedor por defecto ya fue creado")
+        }
+
+    } catch (err) {
+        console.error("Error al crear el distribuidor por defecto", err)
     }
 }

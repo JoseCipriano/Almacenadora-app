@@ -1,13 +1,14 @@
 import { body, param } from "express-validator";
-import { validarCampos } from "./validar-campos";
-import { existeProductoById, noExistenteCategory, noExistenteSupplier } from "../helpers/db-validator";
-import { validarJWT } from "./validar-jwt";
-import { esAdminRole } from "./validateRole";
+import { validarCampos } from "./validar-campos.js";
+import { existeProductoById, existProductName, noExistenteCategory, noExistenteSupplier } from "../helpers/db-validator.js";
+import { validarJWT } from "./validar-jwt.js";
+import { esAdminRole } from "./validateRole.js";
 
 export const validatorCreateProduct = [
     validarJWT,
-    esAdminRole("ADMIN"),
+    esAdminRole("ADMIN", "EMPLEADO"),
     body("nameProduct", "The nameProduct is required").notEmpty(),
+    body("nameProduct").custom(existProductName),
     body("category", "Enter a category for the product").notEmpty(),
     body("category").custom(noExistenteCategory),
     body("supplier", "Enter a supplier for the product").notEmpty(),
@@ -22,6 +23,7 @@ export const validatorUpdateProduct = [
     param("id", "Enter a valid ID").notEmpty(),
     param("id").custom(existeProductoById),
     body("nameProduct", "The nameProduct is required").notEmpty(),
+    body("nameProduct").custom(existProductName),
     body("category", "Enter a category for the product").notEmpty(),
     body("category").custom(noExistenteCategory),
     body("supplier", "Enter a supplier for the product").notEmpty(),

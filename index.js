@@ -1,5 +1,8 @@
 import { config } from "dotenv";
-import { initServer } from "./configs/server.js"
+import { defaultAdmin, defaultCategory, defaultSupplier, initServer } from "./configs/server.js"
 
 config()
 initServer()
+defaultAdmin()
+defaultCategory()
+defaultSupplier()

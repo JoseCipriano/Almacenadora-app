@@ -1,14 +1,17 @@
 import { body, param } from "express-validator";
-import { validarCampos } from "./validar-campos";
-import { existeProveedorById } from "../helpers/db-validator";
-import { validarJWT } from "./validar-jwt";
-import { esAdminRole } from "./validateRole";
+import { validarCampos } from "./validar-campos.js";
+import { existContactSupplier, existenteSupplier, existeProveedorById } from "../helpers/db-validator.js";
+import { validarJWT } from "./validar-jwt.js";
+import { esAdminRole } from "./validateRole.js";
 
 export const validatorCreateSupplier = [
     validarJWT,
-    esAdminRole("ADMIN"),
+    esAdminRole("ADMIN", "EMPLEADO"),
     body("name", "The name is required").notEmpty(),
+    body("name").custom(existenteSupplier),
     body("contact", "The contact is required").notEmpty(),
+    body("contact", "Enter a valid email").isEmail(),
+    body("contact").custom(existContactSupplier),
     validarCampos
 ]
 
@@ -18,7 +21,10 @@ export const validatorUpdateSupplier = [
     param("id", "Enter a valid ID").notEmpty(),
     param("id").custom(existeProveedorById),
     body("name", "The name is required").notEmpty(),
+    body("name").custom(existenteSupplier),
     body("contact", "The contact is required").notEmpty(),
+    body("contact", "Enter a valid email").isEmail(),
+    body("contact").custom(existContactSupplier),
     validarCampos
 ]
 

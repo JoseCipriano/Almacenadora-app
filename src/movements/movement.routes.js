@@ -30,10 +30,3 @@ router.delete(
 );  
 
 export default router;
-/*
-        validateCantidad, 
-        validateEmpleadoEncargado, 
-        validateEstado, 
-        validateFechas, 
-        validateProducto,
-*/

@@ -1,6 +1,5 @@
 import { Router } from "express";
 import { check } from "express-validator";
-import { deleteFileOnError } from "../middlewares/delete-file-on-error.js";
 import { createCategory, updateCategory, deleteCategory, getCategories } from "./category.controller.js";
 import { existeCategoriaById } from "../helpers/db-validator.js";
 import { validarCampos } from "../middlewares/validar-campos.js";
@@ -34,8 +33,7 @@ router.put(
         esAdminRole("ADMIN"),
         check("id", "No es un ID válido").isMongoId(),
         check("id").custom(existeCategoriaById),
-        validarCampos,
-        deleteFileOnError
+        validarCampos
     ],
     updateCategory
 )
@@ -46,8 +44,7 @@ router.delete(
         validarJWT,
         esAdminRole("ADMIN"),
         check("id", "No es un ID válido").isMongoId(),
-        validarCampos,
-        deleteFileOnError
+        validarCampos
     ],
     deleteCategory
 )
