@@ -1,0 +1,240 @@
+[{
+  "_id": {
+    "$oid": "681a26c0bb32b4067a212a09"
+  },
+  "nameProduct": "Sopas Instantáneas LAKY Men",
+  "category": {
+    "$oid": "681a15d6bb32b4067a2129b7"
+  },
+  "supplier": {
+    "$oid": "681a19fdbb32b4067a2129df"
+  },
+  "stock": 110,
+  "status": true,
+  "createdAt": {
+    "$date": "2025-05-06T15:12:00.422Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-06T16:39:05.932Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "681a26ddbb32b4067a212a0e"
+  },
+  "nameProduct": "Galletas de Chocolate ChocoMax",
+  "category": {
+    "$oid": "681a15d6bb32b4067a2129b7"
+  },
+  "supplier": {
+    "$oid": "681a1e21bb32b4067a2129e1"
+  },
+  "stock": 140,
+  "status": true,
+  "createdAt": {
+    "$date": "2025-05-06T15:12:29.250Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-06T16:36:48.920Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "681a26efbb32b4067a212a13"
+  },
+  "nameProduct": "Aceite de Oliva Virgen Extra OlivaBella",
+  "category": {
+    "$oid": "681a15d6bb32b4067a2129b7"
+  },
+  "supplier": {
+    "$oid": "681a1e52bb32b4067a2129e3"
+  },
+  "stock": 150,
+  "status": true,
+  "createdAt": {
+    "$date": "2025-05-06T15:12:47.058Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-06T16:40:39.839Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "681a26fcbb32b4067a212a18"
+  },
+  "nameProduct": "Frutas Frescas Orgánico Frutal",
+  "category": {
+    "$oid": "681a15d6bb32b4067a2129b7"
+  },
+  "supplier": {
+    "$oid": "681a1ed4bb32b4067a2129e7"
+  },
+  "stock": 130,
+  "status": true,
+  "createdAt": {
+    "$date": "2025-05-06T15:13:00.843Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-06T16:42:26.573Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "681a2729bb32b4067a212a21"
+  },
+  "nameProduct": "Vitaminas Multinutri",
+  "category": {
+    "$oid": "681a1671bb32b4067a2129c9"
+  },
+  "supplier": {
+    "$oid": "681a213cbb32b4067a2129f1"
+  },
+  "stock": 50,
+  "status": true,
+  "createdAt": {
+    "$date": "2025-05-06T15:13:45.661Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-06T16:50:22.430Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "681a273dbb32b4067a212a26"
+  },
+  "nameProduct": "Pelota de Fútbol ProGoal",
+  "category": {
+    "$oid": "681a165bbb32b4067a2129c6"
+  },
+  "supplier": {
+    "$oid": "681a211abb32b4067a2129ef"
+  },
+  "stock": 145,
+  "status": true,
+  "createdAt": {
+    "$date": "2025-05-06T15:14:05.488Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-06T16:23:42.293Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "681a274abb32b4067a212a2b"
+  },
+  "nameProduct": "Juguete Educativo SmartToys",
+  "category": {
+    "$oid": "681a1637bb32b4067a2129c3"
+  },
+  "supplier": {
+    "$oid": "681a2219bb32b4067a2129f3"
+  },
+  "stock": 200,
+  "status": true,
+  "createdAt": {
+    "$date": "2025-05-06T15:14:18.647Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-06T15:14:18.647Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "681a27efbb32b4067a212a3c"
+  },
+  "nameProduct": "Camiseta Deportiva FitLife",
+  "category": {
+    "$oid": "681a1606bb32b4067a2129bd"
+  },
+  "supplier": {
+    "$oid": "681a20f1bb32b4067a2129ed"
+  },
+  "stock": 120,
+  "status": true,
+  "createdAt": {
+    "$date": "2025-05-06T15:17:03.533Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-06T15:25:30.015Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "681a2802bb32b4067a212a41"
+  },
+  "nameProduct": "Chaqueta de Invierno Nórdica",
+  "category": {
+    "$oid": "681a1606bb32b4067a2129bd"
+  },
+  "supplier": {
+    "$oid": "681a1fb4bb32b4067a2129eb"
+  },
+  "stock": 70,
+  "status": true,
+  "createdAt": {
+    "$date": "2025-05-06T15:17:22.725Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-06T16:33:45.459Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "681a2838bb32b4067a212a4a"
+  },
+  "nameProduct": "Auriculares Bluetooth JBL",
+  "category": {
+    "$oid": "681a15f1bb32b4067a2129ba"
+  },
+  "supplier": {
+    "$oid": "681a213cbb32b4067a2129f1"
+  },
+  "stock": 300,
+  "status": true,
+  "createdAt": {
+    "$date": "2025-05-06T15:18:16.010Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-06T16:31:40.543Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "681a2852bb32b4067a212a4f"
+  },
+  "nameProduct": "Smartphone Galaxy X1000",
+  "category": {
+    "$oid": "681a15f1bb32b4067a2129ba"
+  },
+  "supplier": {
+    "$oid": "681a1e98bb32b4067a2129e5"
+  },
+  "stock": 90,
+  "status": true,
+  "createdAt": {
+    "$date": "2025-05-06T15:18:42.611Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-06T16:29:24.290Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "681a287cbb32b4067a212a58"
+  },
+  "nameProduct": "Cereal Integral NutriLife",
+  "category": {
+    "$oid": "681a15d6bb32b4067a2129b7"
+  },
+  "supplier": {
+    "$oid": "681a1e21bb32b4067a2129e1"
+  },
+  "stock": 145,
+  "status": true,
+  "createdAt": {
+    "$date": "2025-05-06T15:19:24.411Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-06T16:27:33.339Z"
+  }
+}]

@@ -1,0 +1,234 @@
+[{
+  "_id": {
+    "$oid": "681a11b6bb32b4067a21298a"
+  },
+  "name": "Jesus",
+  "username": "jsis",
+  "email": "jsis@gmail.com",
+  "phone": "40405050",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$7GtM1RxZH4C96rx8Uxgweg$0Zh1G7RzwAFaj68DFoHcmVbKnLPyJqKDt4XPQ6uX3uI",
+  "role": "EMPLEADO",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-05-06T13:42:14.371Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-06T13:42:14.371Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "681a11f9bb32b4067a21298e"
+  },
+  "name": "Maria López",
+  "username": "marialopez",
+  "email": "marialopez@yahoo.com",
+  "phone": "5567891234",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$Ws6YEuxAZBRSJcq8HMH14Q$7WxE4OwocxbzcB0iy2wSqpNlCk/FDqBD/iTri3q37Zo",
+  "role": "EMPLEADO",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-05-06T13:43:21.329Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-06T13:43:21.329Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "681a1222bb32b4067a212992"
+  },
+  "name": "Carlos Gutierrez",
+  "username": "carlosguti",
+  "email": "carlosguti@hotmail.com",
+  "phone": "5523456789",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$KW4WvO7cbDMrN6fn4KUt4A$iq/7hWsY7ymf9Fk6UAWf+622qBUdjHbNXJlAJ69B4Sc",
+  "role": "EMPLEADO",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-05-06T13:44:02.699Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-06T13:44:02.699Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "681a125cbb32b4067a212996"
+  },
+  "name": "Laura Rodríguez",
+  "username": "laurarodriguez",
+  "email": "laurarodriguez@outlook.com",
+  "phone": "5534567890",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$8/SteZcdtHDADnxayrVrbA$EX+RPk1iNkVZRNx4FoIPJOwBDqThJfuBOlpXFGO9G+I",
+  "role": "EMPLEADO",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-05-06T13:45:00.093Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-06T13:45:00.093Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "681a12c8bb32b4067a21299a"
+  },
+  "name": "Pedro Sánchez",
+  "username": "pedrosanchez",
+  "email": "pedrosanchez@aol.com",
+  "phone": "5598765432",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$Urip5Ngb1C5lVvegR84l6A$FXY6SoRkj65U3x1jLSRvChonYHtomUX0/20a+QUBt+w",
+  "role": "EMPLEADO",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-05-06T13:46:48.158Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-06T13:46:48.158Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "681a12ffbb32b4067a21299e"
+  },
+  "name": "Carlos Mendoza",
+  "username": "carlosmendoza",
+  "email": "carlosmendoza@gmail.com",
+  "phone": "5550123456",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$RO6ODObVxnsfA1w6LSfWKQ$IOLC2P9MmjUeIuV0scuBrtJJPMl0a+CPsFaBWSBR4Ww",
+  "role": "ADMIN",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-05-06T13:47:43.127Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-06T13:47:43.127Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "681a1336bb32b4067a2129a2"
+  },
+  "name": "Ana González",
+  "username": "anagonzalez",
+  "email": "anagonzalez@company.com",
+  "phone": "5551122334",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$IeH82kth8C7tJE4erbgAjQ$AyoJ23JC6/qmBIIufhVQZmLxQ6nPHVEfNeb/v07jVfQ",
+  "role": "ADMIN",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-05-06T13:48:38.150Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-06T13:48:38.150Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "681a1349bb32b4067a2129a6"
+  },
+  "name": "Luis Fernández",
+  "username": "luisfernandez",
+  "email": "luisfernandez@domain.com",
+  "phone": "5533445566",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$Oag9QRCYZDSPnLG5cZkyHA$d0p+fEtMNbXYhCdZQD2wNQcKpZKX4B35DD5GFKa7QbA",
+  "role": "ADMIN",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-05-06T13:48:57.947Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-06T13:48:57.947Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "681a1363bb32b4067a2129aa"
+  },
+  "name": "Sofía Martínez",
+  "username": "sofia.martinez",
+  "email": "sofia.martinez@company.org",
+  "phone": "5588776655",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$eOce4qTranytWYeXsqtf0Q$jYZ5r27uWr+w2Qa52Ao8UAmI+OmQUyd7AJpGGu63i1Y",
+  "role": "ADMIN",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-05-06T13:49:23.375Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-06T13:49:23.375Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "681a1376bb32b4067a2129ae"
+  },
+  "name": "Diego Ramírez",
+  "username": "diegoramirez",
+  "email": "diegoramirez@domain.com",
+  "phone": "5599887766",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$YQSUAhsk0e4gmnK99fZR9g$SaLiAY07ncbWqAydVFFb1LfUBvAImUeSZyfUWkPqzp4",
+  "role": "ADMIN",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-05-06T13:49:42.934Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-06T13:49:42.934Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "681a1394bb32b4067a2129b2"
+  },
+  "name": "Patricia Torres",
+  "username": "patriciatorres",
+  "email": "patriciatorres@mail.com",
+  "phone": "5512345678",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$KMCo5aGa8lASSnfihaE9Fw$EStPf+I2rLirdolA1itLDGZiIM/7QpxxHFsT9zeglIo",
+  "role": "ADMIN",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-05-06T13:50:12.525Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-06T13:50:12.525Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "681a2609bb32b4067a2129ff"
+  },
+  "name": "Fernando Choc",
+  "username": "fchoc",
+  "email": "fchoc@mail.com",
+  "phone": "14253678",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$t4IpcikollGwYHHwQnFZAg$iSwd3fhROLD292elXqTT+i1kYFI+x1sNKlk8JaGp4As",
+  "role": "ADMIN",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-05-06T15:08:57.076Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-06T15:08:57.076Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "681a34e8bb32b4067a212a9b"
+  },
+  "name": "John Macca",
+  "username": "jmac",
+  "email": "jmac@mail.com",
+  "phone": "14253678",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$rCee8Dua8dwUOStUwP106w$FfK0fK/rkfpEs5Z4IvPjiSTDCcvCWeO74U21XOyOYCs",
+  "role": "ADMIN",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-05-06T16:12:24.574Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-06T16:12:24.574Z"
+  }
+}]

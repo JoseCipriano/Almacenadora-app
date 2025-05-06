@@ -1,0 +1,176 @@
+[{
+  "_id": {
+    "$oid": "681a2b1bbb32b4067a212a75"
+  },
+  "nameClient": "Isabel Torres",
+  "phone": "43218765",
+  "email": "isabeltorres@mail.com",
+  "estado": true,
+  "role": "CLIENT",
+  "createdAt": {
+    "$date": "2025-05-06T15:30:35.799Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-06T15:30:35.799Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "681a2b3fbb32b4067a212a78"
+  },
+  "nameClient": "Miguel Álvarez",
+  "phone": "32147890",
+  "email": "miguelalvarez@gmail.com",
+  "estado": true,
+  "role": "CLIENT",
+  "createdAt": {
+    "$date": "2025-05-06T15:31:11.629Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-06T15:31:11.629Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "681a2b55bb32b4067a212a7b"
+  },
+  "nameClient": "Laura Martín",
+  "phone": "65423987",
+  "email": "lauramartin@yahoo.com",
+  "estado": true,
+  "role": "CLIENT",
+  "createdAt": {
+    "$date": "2025-05-06T15:31:33.765Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-06T15:31:33.765Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "681a2b67bb32b4067a212a7e"
+  },
+  "nameClient": "Fernando Ruiz",
+  "phone": "98761234",
+  "email": "fernandoruiz@hotmail.com",
+  "estado": true,
+  "role": "CLIENT",
+  "createdAt": {
+    "$date": "2025-05-06T15:31:51.954Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-06T15:31:51.954Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "681a2b7ebb32b4067a212a81"
+  },
+  "nameClient": "Lucía García",
+  "phone": "34567891",
+  "email": "luciagarcia@outlook.com",
+  "estado": true,
+  "role": "CLIENT",
+  "createdAt": {
+    "$date": "2025-05-06T15:32:14.325Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-06T15:32:14.325Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "681a2b8dbb32b4067a212a84"
+  },
+  "nameClient": "Javier López",
+  "phone": "87654322",
+  "email": "javierlopez@live.com",
+  "estado": true,
+  "role": "CLIENT",
+  "createdAt": {
+    "$date": "2025-05-06T15:32:29.692Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-06T15:32:29.692Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "681a2b9bbb32b4067a212a87"
+  },
+  "nameClient": "Raquel Pérez",
+  "phone": "23456789",
+  "email": "raquelperez@aol.com",
+  "estado": true,
+  "role": "CLIENT",
+  "createdAt": {
+    "$date": "2025-05-06T15:32:43.191Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-06T15:32:43.191Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "681a2ba8bb32b4067a212a8a"
+  },
+  "nameClient": "Antonio Jiménez",
+  "phone": "56789012",
+  "email": "antoniojimenez@gmail.com",
+  "estado": true,
+  "role": "CLIENT",
+  "createdAt": {
+    "$date": "2025-05-06T15:32:56.013Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-06T15:32:56.013Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "681a2bb3bb32b4067a212a8d"
+  },
+  "nameClient": "Beatriz Mendoza",
+  "phone": "65432187",
+  "email": "beatrizmendoza@msn.com",
+  "estado": true,
+  "role": "CLIENT",
+  "createdAt": {
+    "$date": "2025-05-06T15:33:07.503Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-06T15:33:07.503Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "681a2bc0bb32b4067a212a90"
+  },
+  "nameClient": "David Castillo",
+  "phone": "78901234",
+  "email": "davidcastillo@protonmail.com",
+  "estado": true,
+  "role": "CLIENT",
+  "createdAt": {
+    "$date": "2025-05-06T15:33:20.507Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-06T15:33:20.507Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "681a2bccbb32b4067a212a93"
+  },
+  "nameClient": "Esther Morales",
+  "phone": "43210987",
+  "email": "esthermorales@icloud.com",
+  "estado": true,
+  "role": "CLIENT",
+  "createdAt": {
+    "$date": "2025-05-06T15:33:32.184Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-06T15:33:32.184Z"
+  }
+}]

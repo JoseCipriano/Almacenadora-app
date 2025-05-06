@@ -1,54 +1,154 @@
 [{
   "_id": {
-    "$oid": "68140ed4e249454e5863093b"
+    "$oid": "681a19fdbb32b4067a2129df"
   },
-  "name": "Carlos Torres",
-  "contact": "Adrian As.",
-  "productsSupplied": [
-    "Articulos de cocina"
-  ],
-  "client": false,
+  "name": "Juan Herrera",
+  "contact": "Leonardo DiCaprio",
   "status": true,
   "createdAt": {
-    "$date": "2025-05-02T00:16:20.456Z"
+    "$date": "2025-05-06T14:17:33.275Z"
   },
   "updatedAt": {
-    "$date": "2025-05-02T00:16:20.456Z"
+    "$date": "2025-05-06T14:54:29.364Z"
   }
 },
 {
   "_id": {
-    "$oid": "68140efee249454e5863093f"
+    "$oid": "681a1e21bb32b4067a2129e1"
   },
-  "name": "Noah Perez",
-  "contact": "Pollos Bros S.A de C.V.",
-  "productsSupplied": [
-    "Pollos"
-  ],
-  "client": false,
+  "name": "Marta González",
+  "contact": "Ricardo",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-05-06T14:35:13.143Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-06T14:35:13.143Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "681a1e52bb32b4067a2129e3"
+  },
+  "name": "Carlos Pérez",
+  "contact": "Ana",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-05-06T14:36:02.871Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-06T14:36:02.871Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "681a1e98bb32b4067a2129e5"
+  },
+  "name": "Sofía Rodríguez",
+  "contact": "David",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-05-06T14:37:12.286Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-06T14:37:12.286Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "681a1ed4bb32b4067a2129e7"
+  },
+  "name": "Luis Fernández",
+  "contact": "María",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-05-06T14:38:12.210Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-06T14:38:12.210Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "681a1f0fbb32b4067a2129e9"
+  },
+  "name": "Sofía Rodríguez",
+  "contact": "David",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-05-06T14:39:11.811Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-06T14:39:11.811Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "681a1fb4bb32b4067a2129eb"
+  },
+  "name": "Gabriela Morales",
+  "contact": "Sergio",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-05-06T14:41:56.608Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-06T14:41:56.608Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "681a20f1bb32b4067a2129ed"
+  },
+  "name": "Felipe Díaz",
+  "contact": "Elena",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-05-06T14:47:13.030Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-06T14:47:13.030Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "681a211abb32b4067a2129ef"
+  },
+  "name": "Ricardo Soto",
+  "contact": "Laura",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-05-06T14:47:54.910Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-06T14:47:54.910Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "681a213cbb32b4067a2129f1"
+  },
+  "name": "Esteban López",
+  "contact": "Héctor",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-05-06T14:48:28.021Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-06T14:48:28.021Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "681a2219bb32b4067a2129f3"
+  },
+  "name": "Lorena Silva",
+  "contact": "Marco",
   "status": false,
   "createdAt": {
-    "$date": "2025-05-02T00:17:02.830Z"
+    "$date": "2025-05-06T14:52:09.977Z"
   },
   "updatedAt": {
-    "$date": "2025-05-02T04:35:16.078Z"
-  }
-},
-{
-  "_id": {
-    "$oid": "68140f12e249454e58630943"
-  },
-  "name": "Fernando Choc",
-  "contact": "Elmer",
-  "productsSupplied": [
-    "Carne"
-  ],
-  "client": false,
-  "status": true,
-  "createdAt": {
-    "$date": "2025-05-02T00:17:22.196Z"
-  },
-  "updatedAt": {
-    "$date": "2025-05-02T00:17:22.196Z"
+    "$date": "2025-05-06T14:54:47.070Z"
   }
 }]

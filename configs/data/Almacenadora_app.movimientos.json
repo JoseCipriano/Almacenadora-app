@@ -1,128 +1,220 @@
 [{
   "_id": {
-    "$oid": "6816cf319837c4acc2772dca"
+    "$oid": "681a378e23d98076deaed8bd"
   },
-  "producto": "6816ca390ed9ae18a8d5c350",
-  "cantidad": 15,
-  "empleadoEncargado": "Carlos Ramos",
-  "fechaEntrada": {
+  "type": "Entrada",
+  "entryDate": {
     "$date": "2023-12-01T00:00:00.000Z"
   },
-  "fechaSalida": {
-    "$date": "2023-12-15T00:00:00.000Z"
+  "quantity": 15,
+  "employee": {
+    "$oid": "681a11b6bb32b4067a21298a"
   },
-  "estado": "Entrada",
-  "__v": 0
+  "reason": "Se recibe carga de la empresa para tener mas producto en el almacen",
+  "product": {
+    "$oid": "681a273dbb32b4067a212a26"
+  },
+  "client": null,
+  "status": true
 },
 {
   "_id": {
-    "$oid": "6816d2ad612af4e6ff1223a6"
+    "$oid": "681a387523d98076deaed8c5"
   },
-  "producto": "Producto A",
-  "cantidad": 10,
-  "empleadoEncargado": "Juan Perez",
-  "fechaEntrada": {
-    "$date": "2023-12-01T00:00:00.000Z"
+  "type": "Entrada",
+  "entryDate": {
+    "$date": "2025-05-01T00:00:00.000Z"
   },
-  "fechaSalida": {
-    "$date": "2023-12-10T00:00:00.000Z"
+  "quantity": 50,
+  "employee": {
+    "$oid": "681a11f9bb32b4067a21298e"
   },
-  "estado": "Entrada",
-  "__v": 0
+  "reason": "Se recibe carga de la empresa para tener mas producto en el almacen",
+  "product": {
+    "$oid": "681a287cbb32b4067a212a58"
+  },
+  "client": null,
+  "status": true
 },
 {
   "_id": {
-    "$oid": "6816e0ccf197291e50d3db78"
+    "$oid": "681a38e423d98076deaed8cd"
   },
-  "producto": "Producto C",
-  "cantidad": 10,
-  "empleadoEncargado": "Juan Perez",
-  "fechaEntrada": {
-    "$date": "2023-12-01T00:00:00.000Z"
+  "type": "Entrada",
+  "entryDate": {
+    "$date": "2025-04-02T00:00:00.000Z"
   },
-  "fechaSalida": {
-    "$date": "2023-12-10T00:00:00.000Z"
+  "quantity": 30,
+  "employee": {
+    "$oid": "681a1222bb32b4067a212992"
   },
-  "estado": "Entrada",
-  "__v": 0
+  "reason": "Se recibe carga de la empresa para tener mas producto en el almacen",
+  "product": {
+    "$oid": "681a2852bb32b4067a212a4f"
+  },
+  "client": null,
+  "status": true
 },
 {
   "_id": {
-    "$oid": "6816e11f9837c4acc2772deb"
+    "$oid": "681a396c23d98076deaed8d5"
   },
-  "producto": "Producto C",
-  "cantidad": 10,
-  "empleadoEncargado": "Juan Perez",
-  "fechaEntrada": {
-    "$date": "2023-12-01T00:00:00.000Z"
+  "type": "Entrada",
+  "entryDate": {
+    "$date": "2025-04-03T00:00:00.000Z"
   },
-  "fechaSalida": {
-    "$date": "2023-12-10T00:00:00.000Z"
+  "quantity": 50,
+  "employee": {
+    "$oid": "681a125cbb32b4067a212996"
   },
-  "estado": "Entrada",
-  "__v": 0
+  "reason": "Se recibe carga de la empresa para tener mas producto en el almacen",
+  "product": {
+    "$oid": "681a2838bb32b4067a212a4a"
+  },
+  "client": null,
+  "status": true
 },
 {
   "_id": {
-    "$oid": "6816f30d5ad9ef13625c7d4a"
+    "$oid": "681a39e923d98076deaed8dd"
   },
-  "producto": "Producto C",
-  "cantidad": 10,
-  "empleadoEncargado": "Juan Perez",
-  "fechaEntrada": {
-    "$date": "2023-12-01T00:00:00.000Z"
+  "type": "Entrada",
+  "entryDate": {
+    "$date": "2025-04-05T00:00:00.000Z"
   },
-  "fechaSalida": {
-    "$date": "2023-12-10T00:00:00.000Z"
+  "quantity": 20,
+  "employee": {
+    "$oid": "681a12c8bb32b4067a21299a"
   },
-  "estado": "Entrada",
-  "__v": 0
+  "reason": "Se recibe carga de la empresa para tener mas producto en el almacen",
+  "product": {
+    "$oid": "681a2802bb32b4067a212a41"
+  },
+  "client": null,
+  "status": true
 },
 {
   "_id": {
-    "$oid": "6816f3fe5ad9ef13625c7d4e"
+    "$oid": "681a3aa0bb32b4067a212aa5"
   },
-  "producto": "Producto C",
-  "cantidad": 10,
-  "empleadoEncargado": "Juan Perez",
-  "fechaEntrada": {
-    "$date": "2023-12-01T00:00:00.000Z"
+  "type": "Salida",
+  "exitDate": {
+    "$date": "2025-06-10T00:00:00.000Z"
   },
-  "fechaSalida": {
-    "$date": "2023-12-10T00:00:00.000Z"
+  "quantity": 10,
+  "employee": {
+    "$oid": "681a11b6bb32b4067a21298a"
   },
-  "estado": "Entrada",
-  "__v": 0
+  "reason": "Se recibe carga de la empresa para tener mas producto en el almacen",
+  "destiny": "Sucursal externa",
+  "product": {
+    "$oid": "681a26ddbb32b4067a212a0e"
+  },
+  "client": {
+    "$oid": "681a2bccbb32b4067a212a93"
+  },
+  "status": true,
+  "entryDate": {
+    "$date": "2025-05-06T16:36:48.921Z"
+  }
 },
 {
   "_id": {
-    "$oid": "6816f417d1d3fb27bf4da611"
+    "$oid": "681a3b29bb32b4067a212ab4"
   },
-  "producto": "Producto C",
-  "cantidad": 10,
-  "empleadoEncargado": "Juan Perez",
-  "fechaEntrada": {
-    "$date": "2023-12-01T00:00:00.000Z"
+  "type": "Salida",
+  "exitDate": {
+    "$date": "2025-06-11T00:00:00.000Z"
   },
-  "fechaSalida": {
-    "$date": "2023-12-10T00:00:00.000Z"
+  "quantity": 5,
+  "employee": {
+    "$oid": "681a12c8bb32b4067a21299a"
   },
-  "estado": "Entrada",
-  "__v": 0
+  "reason": "Se recibe carga de la empresa para tener mas producto en el almacen",
+  "destiny": "Sucursal externa",
+  "product": {
+    "$oid": "681a26c0bb32b4067a212a09"
+  },
+  "client": {
+    "$oid": "681a2bc0bb32b4067a212a90"
+  },
+  "status": true,
+  "entryDate": {
+    "$date": "2025-05-06T16:39:05.933Z"
+  }
 },
 {
   "_id": {
-    "$oid": "6816f41f5ad9ef13625c7d53"
+    "$oid": "681a3b87bb32b4067a212abc"
   },
-  "producto": "Producto C",
-  "cantidad": 10,
-  "empleadoEncargado": "Juan Perez",
-  "fechaEntrada": {
-    "$date": "2023-12-01T00:00:00.000Z"
+  "type": "Salida",
+  "exitDate": {
+    "$date": "2025-05-13T00:00:00.000Z"
   },
-  "fechaSalida": {
-    "$date": "2023-12-10T00:00:00.000Z"
+  "quantity": 50,
+  "employee": {
+    "$oid": "681a125cbb32b4067a212996"
   },
-  "estado": "Entrada",
-  "__v": 0
+  "reason": "Se recibe carga de la empresa para tener mas producto en el almacen",
+  "destiny": "Sucursal externa",
+  "product": {
+    "$oid": "681a26efbb32b4067a212a13"
+  },
+  "client": {
+    "$oid": "681a2bb3bb32b4067a212a8d"
+  },
+  "status": true,
+  "entryDate": {
+    "$date": "2025-05-06T16:40:39.840Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "681a3bf2bb32b4067a212ac4"
+  },
+  "type": "Salida",
+  "exitDate": {
+    "$date": "2025-05-15T00:00:00.000Z"
+  },
+  "quantity": 50,
+  "employee": {
+    "$oid": "681a1222bb32b4067a212992"
+  },
+  "reason": "Se recibe carga de la empresa para tener mas producto en el almacen",
+  "destiny": "Sucursal externa",
+  "product": {
+    "$oid": "681a26fcbb32b4067a212a18"
+  },
+  "client": {
+    "$oid": "681a2ba8bb32b4067a212a8a"
+  },
+  "status": false,
+  "entryDate": {
+    "$date": "2025-05-06T16:42:26.574Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "681a3c59bb32b4067a212acc"
+  },
+  "type": "Salida",
+  "exitDate": {
+    "$date": "2025-05-18T00:00:00.000Z"
+  },
+  "quantity": 150,
+  "employee": {
+    "$oid": "681a11f9bb32b4067a21298e"
+  },
+  "reason": "Se recibe carga de la empresa para tener mas producto en el almacen",
+  "destiny": "Sucursal externa",
+  "product": {
+    "$oid": "681a2729bb32b4067a212a21"
+  },
+  "client": {
+    "$oid": "681a2b9bbb32b4067a212a87"
+  },
+  "status": true,
+  "entryDate": {
+    "$date": "2025-05-06T16:44:09.854Z"
+  }
 }]

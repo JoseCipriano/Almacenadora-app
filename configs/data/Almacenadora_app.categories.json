@@ -1,0 +1,154 @@
+[{
+  "_id": {
+    "$oid": "681a15d6bb32b4067a2129b7"
+  },
+  "nameCategory": "Alimentos",
+  "description": "Productos comestibles para consumo humano",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-05-06T13:59:50.142Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-06T13:59:50.142Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "681a15f1bb32b4067a2129ba"
+  },
+  "nameCategory": "Electrónica",
+  "description": "Dispositivos y componentes tecnológicos",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-05-06T14:00:17.116Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-06T14:00:17.116Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "681a1606bb32b4067a2129bd"
+  },
+  "nameCategory": "Ropa",
+  "description": "Prendas de vestir para todos los géneros y edades",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-05-06T14:00:38.568Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-06T14:00:38.568Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "681a161dbb32b4067a2129c0"
+  },
+  "nameCategory": "Hogar",
+  "description": "Artículos y muebles para el hogar",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-05-06T14:01:01.787Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-06T14:01:01.787Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "681a1637bb32b4067a2129c3"
+  },
+  "nameCategory": "Juguetes",
+  "description": "Productos diseñados para el entretenimiento y desarrollo infantil",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-05-06T14:01:27.277Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-06T14:01:27.277Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "681a165bbb32b4067a2129c6"
+  },
+  "nameCategory": "Art. Deporte",
+  "description": "Equipos y accesorios para actividades deportivas",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-05-06T14:02:03.774Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-06T14:06:38.430Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "681a1671bb32b4067a2129c9"
+  },
+  "nameCategory": "Salud",
+  "description": "Productos relacionados con el bienestar físico y médico",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-05-06T14:02:25.499Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-06T14:02:25.499Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "681a16b1bb32b4067a2129cc"
+  },
+  "nameCategory": "Automotriz",
+  "description": "Accesorios y repuestos para vehículos",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-05-06T14:03:29.047Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-06T14:03:29.047Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "681a16d2bb32b4067a2129cf"
+  },
+  "nameCategory": "Libros",
+  "description": "Publicaciones literarias de diversos géneros",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-05-06T14:04:02.931Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-06T14:04:02.931Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "681a16e7bb32b4067a2129d2"
+  },
+  "nameCategory": "Música",
+  "description": "Instrumentos y accesorios musicales",
+  "status": false,
+  "createdAt": {
+    "$date": "2025-05-06T14:04:23.981Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-06T14:07:06.452Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "681a16f6bb32b4067a2129d5"
+  },
+  "nameCategory": "Tecnología",
+  "description": "Productos y servicios relacionados con la informática y la comunicación",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-05-06T14:04:38.320Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-06T14:04:38.320Z"
+  }
+}]
