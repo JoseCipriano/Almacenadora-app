@@ -1,0 +1,210 @@
+/* Estilos generales */
+.profile-page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+.profile-page-title {
+    font-size: 35px;
+    color: #2c3e50;
+    margin-bottom: 40px;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #d7e4e7;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.profile-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-avatar img {
+    width: 200px;
+    height: 300px;
+    border-radius: 50%;
+    border: 5px solid #2b535c;
+    transition: all 0.3s ease;
+}
+
+.profile-avatar img:hover {
+    transform: scale(1.1);
+}
+
+.profile-header h2 {
+    font-size: 26px;
+    color: #2c3e50;
+    margin-top: 10px;
+}
+
+.profile-info {
+    text-align: left;
+    font-size: 16px;
+    color: #34495e;
+    margin: 20px 0;
+    width: 100%;
+    border-top: 2px solid #ecf0f1;
+    padding-top: 10px;
+}
+
+.profile-info p {
+    margin: 8px 0;
+}
+
+/* Contenedor para los botones de acción */
+.profile-buttons-container {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Estilos de los botones */
+.edit-profile-button,
+.update-password-button,
+.logout-button {
+    background-color: #426A73;
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    max-width: none;
+    white-space: nowrap;
+}
+
+.edit-profile-button:hover,
+.update-password-button:hover,
+.logout-button:hover {
+    background-color: #59818B;
+}
+
+.logout-button {
+    background-color: #426A73;
+}
+
+  
+  .profile-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .profile-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    animation: slideUp 0.5s ease;
+    margin-right: 130px;
+  }
+  
+  .profile-form label {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    color: #2b535c;
+  }
+  
+  .profile-form input {
+    padding: 1rem;
+    border: 2px solid #86AB8C;
+    background-color: #e9e6e6;
+    border-radius: 0.8rem;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+    width: 140%;
+  }
+  
+  .profile-form input:focus {
+    outline: none;
+    border-color: #34495e;
+  }
+  
+  .profile-form button {
+    padding: 10px 1.2rem;
+    border: none;
+    background-color: #34495e;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 100%;
+    display: table-column;
+    margin-left: 30%;
+  }
+  
+  .profile-form button:hover {
+    background-color: #426A73;
+    transform: scale(1.02);
+  }
+  
+  .profile-form button[type='button'] {
+    background-color: #c0c4c5;
+    color: #333;
+  }
+  
+  .profile-buttons-container-user {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem; 
+    flex-wrap: nowrap; 
+    margin-top: 2rem;
+}
+
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes slideUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .profile-avatar {
+    margin-bottom: 1rem;
+}
+
+.avatar-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.avatar-placeholder {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #6b7280;
+}

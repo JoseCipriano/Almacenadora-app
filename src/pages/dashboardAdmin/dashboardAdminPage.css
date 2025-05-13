@@ -1,0 +1,173 @@
+body, html {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8;
+}
+
+.dashboard-admin {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Hero */
+.admin-hero {
+  background: linear-gradient(135deg, #2B535C, #3f8a95);
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.admin-hero h1 {
+  font-size: 4rem;
+  margin-bottom: 10px;
+}
+
+.admin-hero p {
+  font-size: 1.3rem;
+  opacity: 0.95;
+}
+
+/* Widgets */
+.admin-widgets {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px 20px;
+  flex-wrap: wrap;
+  background-color: #ffffff;
+}
+
+.admin-widget {
+  padding: 25px;
+  border-radius: 15px;
+  width: 220px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.admin-widget:hover {
+  transform: scale(1.05);
+}
+
+.admin-widget h3 {
+  font-size: 2rem;
+  color: #2B535C;
+}
+
+.admin-widget p {
+  color: #555;
+}
+
+/* Gestión del sistema */
+.system-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.system-section h2 {
+  font-size: 3rem;
+  margin-bottom: 30px;
+  color: #234851;
+}
+
+.system-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.system-card {
+  background-color: #d7eaee;
+  padding: 25px 20px;
+  width: 250px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.system-card:hover {
+  transform: translateY(-10px);
+  background-color: #e0f7f9;
+}
+
+.system-card h4 {
+  font-size: 1.2rem;
+  color: #2B535C;
+  margin-top: 15px;
+}
+
+.icon-container {
+  font-size: 2.5rem;
+  color: #2B535C;
+  display: flex;
+  justify-content: center;
+}
+
+.footer {
+  background-color: #2B535C;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+ .profile-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-pic {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+    border: 2px solid white;
+  }
+  
+  .profile-dropdown {
+    position: absolute;
+    top: 90px;
+    right: 0;
+    background-color: #2B535C;
+    padding: 5px 5px;
+    border-radius: 8px;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+  }
+  
+  .profile-dropdown p {
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 30px; 
+  }
+  
+  .profile-dropdown p:hover {
+    background-color: #4b5563;
+    border-radius: 6px;
+  }
+  
+  .profile-dropdown i {
+    font-size: 1.2rem; 
+    color: white;
+  }
+  
+  .nav-and-profile {
+    display: flex;
+    align-items: center;
+    gap: 30px; 
+  }
+  
